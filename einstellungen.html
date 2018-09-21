@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bootstrap 3 Tutorial from BootstrapBay.com">
     <meta name="author" content="BootstrapBay.com">
-    <title>BootstrapBay Tutorial</title>
+    <title>Spiel einrichten</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -25,28 +25,28 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Unternehmensplanspiel</a>
+				<a class="navbar-brand" href="einstellungen.html">Unternehmensplanspiel</a>
 			</div>
 			<div class="navbar-collapse collapse">
 		
 				<ul class="nav navbar-nav navbar-default">
 					<!-- Start -->
-					<li><a href="index.html">Start</a></li> 
+					<li><a href="einstellungen.html">Start</a></li> 
 
 					<!-- Einkauf -->					
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Einkauf <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="einkauf.html">Einkauf</a></li>         
+							<li><a href="#">Einkauf</a></li>         
 						</ul>
 					</li>
 
 					<!-- Verarbeitung -->
 					<li class="dropdown">
-						<a href="verarbeitung.html" class="dropdown-toggle" data-toggle="dropdown">Verarbeitung <b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Verarbeitung <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 						
-							<li><a href="verarbeitung.html">Verarbeitung</a></li>
+							<li><a href="#">Verarbeitung</a></li>
 							<li class="divider"></li>
 							<li class="dropdown-header">Produkte</li>
 							<li><a href="#">Stühle</a></li>
@@ -60,7 +60,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Verkauf <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 						
-							<li><a href="verkauf.html">Verkauf</a></li>
+							<li><a href="#">Verkauf</a></li>
 							<li class="divider"></li>
 							<li class="dropdown-header">Angebote</li>
 							<li><a href="#">Neues Angebot</a></li>
@@ -70,11 +70,11 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about">Runde 1</a></li>
+					<li><a href="#about">Runde 0</a></li>
 					<li><a href="#budget">Budget: 000000 €</a></li>
 					<li><a href="#about">Zeit: 00:00</a></li>
 					<li><img src="img/account.svg"></img></li>
-					<li><a href="#about">Spieler 1</a></li>
+					<li><a href="#about">Spieler</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -83,12 +83,48 @@
 	<!-- Page Header -->
 	<div class="container">	
         <div class="page-header">
-            <h1>Log In</h1>
+            <h1>Spiel einrichten</h1>
         </div>
-		
-	
+		<h3>Bitte geben Sie Ihre Firma ein und wählen Sie eine Unternehmensform!</h3>
+	<!--<div class="input-group">
+  		<span class="input-group-addon" id="einfaches-addon1">@</span>
+  		<input type="text" class="form-control" placeholder="Benutzername" aria-describedby="einfaches-addon1">
+	</div>
+	<br>
+	<div class="input-group">
+  		<input type="text" class="form-control" placeholder="Empfänger-Benutzername" aria-describedby="einfaches-addon2">
+  		<span class="input-group-addon" id="einfaches-addon2">@beispiel.de</span>
+	</div>
+	<br>
+	<div class="input-group">
+  		<span class="input-group-addon">€</span>
+  		<input type="text" class="form-control" aria-label="Summe (gerundet zum nächsten ganzen Euro)">
+  		<span class="input-group-addon">,00</span>
+	</div>-->
 
-	
+	<div class="input-group">
+  		<input type="text" class="form-control" aria-label="...">
+  			<div class="input-group-btn">
+  				<div class="dropdown" padding="20px">
+  					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    				Unternehmensform
+    				<span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Aktiengesellschaft (AG)'">AG</a></li>
+			    		<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Gesellschaft mit beschränkter Haftung (GmbH)'">GmbH</a></li>
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Offene Handelsgesellschaft (OHG)'">OHG</a></li>
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Kommanditgesellschaft (KG)'">KG</a></li>
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Einzelkaufmann (eK)'">eK</a></li>	<!--http://holdirbootstrap.de/komponenten/-->
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Gesellschaft mit beschränkter Haftung und Compagnie Kommanditgesellschaft (GmbH & Co.KG)'">GmbH & Co.KG</a></li>
+    					<li><a onclick="document.getElementById('dropdownMenu1').innerHTML='Unternehmergesellschaft mit haftungsbeschränkung'">UG</a></li>
+  					</ul>
+				</div>
+    			<!-- Button und Dropdown-Menü -->
+  		</div>
+	</div>
+	<p></p>
+	<a class="btn btn-primary float-right" onclick="href='einstellungen.html'">Spiel starten</a>
 		    
     <!-- Fixed footer -->
     <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
