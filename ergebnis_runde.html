@@ -23,16 +23,16 @@
             },      
             data: [
             {       
-                type: "pie",
+                type: "column",
                 showInLegend: true,
                 toolTipContent: "{y} €",
                 //yValueFormatString: "###,,.### ",
                 legendText: "{indexLabel}",
                 dataPoints: [
-                    {  y: 300000, indexLabel: "Spieler 1" },
-                    {  y: 300000, indexLabel: "Spieler 2" },
-                    {  y: 300000, indexLabel: "Spieler 3" },
-                    {  y: 300000, indexLabel: "Spieler 4"}
+                    {  y: 300000, x: 1, label: "Spieler 1" },
+                    {  y: 300000, x: 2, label: "Spieler 2" },
+                    {  y: 300000, x: 3, label: "Spieler 3" },
+                    {  y: 300000, x: 4, label: "Spieler 4" }
                 ]
             }
             ]
@@ -71,16 +71,16 @@
             },      
              data: [
             {       
-                type: "pie",
+                type: "column",
                 showInLegend: true,
                 toolTipContent: "{y} €",
                 //yValueFormatString: "###,,.### ",
                 legendText: "{indexLabel}",
                 dataPoints: [
-                    {  y: 300000, indexLabel: "Spieler 1" },
-                    {  y: 300000, indexLabel: "Spieler 2" },
-                    {  y: 300000, indexLabel: "Spieler 3" },
-                    {  y: 300000, indexLabel: "Spieler 4"}
+                    {  x:1, y: 300000, label: "Spieler 1" },
+                    {  x:2, y: 300000, label: "Spieler 2" },
+                    {  x:3, y: 300000, label: "Spieler 3" },
+                    {  x:4, y: 300000, label: "Spieler 4"}
                 ]
             }
             ]
@@ -91,20 +91,20 @@
         {
             theme: "theme2",
             title:{
-                text: "Endkapital"
+                text: "Endkapital in €"
             },      
             data: [
             {       
-                type: "pie",
+                type: "column",
                 showInLegend: true,
                 toolTipContent: "{y} €",
                 //yValueFormatString: "###,,.### ",
                 legendText: "{indexLabel}",
                 dataPoints: [
-                    {  y: 300000, indexLabel: "Spieler 1" },
-                    {  y: 300000, indexLabel: "Spieler 2" },
-                    {  y: 300000, indexLabel: "Spieler 3" },
-                    {  y: 300000, indexLabel: "Spieler 4"}
+                    {  x:1, y: 300000, label: "Spieler 1" },
+                    {  x:2, y: 300000, label: "Spieler 2" },
+                    {  x:3, y: 300000, label: "Spieler 3" },
+                    {  x:4, y: 300000, label: "Spieler 4"}
                 ]
             }
             ]
@@ -119,16 +119,16 @@
             },      
             data: [
             {       
-                type: "pie",
+                type: "column",
                 showInLegend: true,
                 toolTipContent: "{y} Mitarbeiter",
                 //yValueFormatString: "###,,.### ",
                 legendText: "{indexLabel}",
                 dataPoints: [
-                    {  y: 4, indexLabel: "Spieler 1" },
-                    {  y: 5, indexLabel: "Spieler 2" },
-                    {  y: 2, indexLabel: "Spieler 3" },
-                    {  y: 1, indexLabel: "Spieler 4"}
+                    {  x:1, y: 4, label: "Spieler 1" },
+                    {  x:2, y: 3, label: "Spieler 2" },
+                    {  x:3, y: 2, label: "Spieler 3" },
+                    {  x:4, y: 1, label: "Spieler 4"}
                 ]
             }
             ]
