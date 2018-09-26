@@ -106,9 +106,9 @@
       						<img src="img/holz.jpg" alt="Holz">
      						<div class="caption">
        							<h3>Holz</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="60/100" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
    									60%
   									</div>
 								</div>
@@ -122,9 +122,9 @@
       						<img src="img/stoff.jpg" alt="Stoff">
      						<div class="caption">
        							<h3>Stoff</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="95/100" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
    									95%
   									</div>
 								</div>
@@ -138,9 +138,9 @@
       						<img src="img/leder.jpg" alt="Leder">
      						<div class="caption">
        							<h3>Leder</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="25/100" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
    									25%
   									</div>
 								</div>
@@ -154,9 +154,9 @@
       						<img src="img/plastik.jpg" alt="Kunststoff">
      						<div class="caption">
        							<h3>Kunststoff</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="10/100" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
    									10%
   									</div>
 								</div>
@@ -170,9 +170,9 @@
       						<img src="img/edelstahl.jpg" alt="Edelstahl">
      						<div class="caption">
        							<h3>Edelstahl</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="80/100" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
    									80%
   									</div>
 								</div>
@@ -186,9 +186,9 @@
       						<img src="img/glas.jpg" alt="Glas">
      						<div class="caption">
        							<h3>Glas</h3>
-        						<p>Kommentar ?</p>
+        						<p>Verfügbare Menge:</p>
         						<div class="progress">
-  									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+  									<div class="progress-bar" role="progressbar" data-toggle="tooltip" title="50/100" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 50%;">
    									50%
   									</div>
 								</div>
@@ -217,6 +217,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+    	$(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+    	});
+    </script>
+
     <div class="modal fade" id="contact" role="dialog">
     	<div class="modal-dialog">
     		<div class="modal-content">
